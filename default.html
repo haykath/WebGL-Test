@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS WebGL Test page</title>
+	<meta charset="utf-8" name="viewport" content="width=device-width, user-scalable=no, initial-scale=0.5" />
+</head>
+<body onload="main()">
+    <canvas id="testCanvas" width="800" height="800"></canvas>
+    <form>
+        Eye X: <input id="EyeX" type="number" step="0.05"/>
+        Eye Y: <input id="EyeY" type="number" step="0.05"/>
+        Eye Z: <input id="EyeZ" type="number" step="0.05"/>
+    </form>
+    <form>
+        Near P: <input id="clipN" type="number" step="0.4"/>
+        Far Pl: <input id="clipF" type="number" step="0.4" />
+    </form>
+    <form>
+        Rot X: <input id="ModelX" type="number" step="0.2"/>
+        Rot Y: <input id="ModelY" type="number" step="0.2" />
+        Rot Z: <input id="ModelZ" type="number" step="0.2" />
+    </form>
+    <form>
+        Roughness: <input id="Specular" type ="range" min ="0.001" max="1.0" step ="0.01"/>
+        Reflectance: <input id="RimLight" type ="range" min ="0.0" max="2.0" step ="0.01" value ="0.5"/>
+    </form>
+
+    <script src="WebGLTestApplication.js"></script>
+    <script src="WebGL.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix.js"></script>
+    <script src="lib/K3D.js"></script>
+</body>
+
+</html>
